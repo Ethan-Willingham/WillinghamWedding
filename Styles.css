@@ -15,6 +15,7 @@ body {
     display: inline-block;
     width: 100%;
     max-width: 1000px; /* Set max width for the image */
+    margin: 0 auto; /* Center the image container */
 }
 
 .floral-image {
@@ -48,6 +49,38 @@ p {
     color: #A0522D; /* Burnt Orange */
 }
 
+.registry-link {
+    margin: 20px 0;
+}
+
+.registry-link a {
+    font-size: 1.5em;
+    color: #A0522D; /* Burnt Orange */
+    text-decoration: none;
+    font-family: 'MonteCarlo', cursive;
+}
+
+.registry-link a:hover {
+    text-decoration: underline;
+}
+
+.couple-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+    flex-wrap: wrap; /* Allow wrapping */
+}
+
+.couple-images img {
+    width: 100%;
+    max-width: 300px; /* Adjust the max width of the images */
+    height: auto;
+    border: 2px solid #A0522D; /* Optional: add a border to the images */
+    border-radius: 10px; /* Optional: add rounded corners */
+}
+
 /* Media queries for responsive scaling */
 
 @media (max-width: 1024px) {
@@ -78,6 +111,10 @@ p {
     p {
         font-size: 1.2em;
     }
+
+    .couple-images {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 480px) {
@@ -92,6 +129,15 @@ p {
 
     p {
         font-size: 1em;
+    }
+
+    .couple-images {
+        flex-direction: column;
+        align-items: center; /* Center align images on small screens */
+    }
+
+    .couple-images img {
+        max-width: 90%; /* Adjust width for smaller screens */
     }
 }
 
