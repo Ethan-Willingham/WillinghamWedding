@@ -1,23 +1,24 @@
 body {
     margin: 0;
-    font-family: 'Georgia', serif;
+    font-family: 'MonteCarlo', cursive;
     background-color: #ffffff;
     color: #A0522D; /* Burnt Orange */
     text-align: center;
 }
 
 .container {
-    padding: 20px;
+    padding: 0 20px; /* Adjusted padding to only affect left and right */
 }
 
 .image-container {
     position: relative;
     display: inline-block;
+    width: 100%;
+    max-width: 1000px; /* Set max width for the image */
 }
 
 .floral-image {
     width: 100%;
-    max-width: 600px;
     height: auto;
 }
 
@@ -26,22 +27,102 @@ body {
     bottom: 20%;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 2em;
+    font-size: 4em; /* Initial larger size */
     color: #A0522D; /* Burnt Orange */
-    font-family: 'Dancing Script', cursive;
+    font-family: 'MonteCarlo', cursive;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    white-space: nowrap; /* Prevent line wrapping */
 }
 
 h1 {
     font-size: 3em;
     margin: 20px 0 10px;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'MonteCarlo', cursive;
     color: #A0522D; /* Burnt Orange */
 }
 
 p {
     font-size: 1.5em;
     margin: 10px 0;
-    font-family: 'Great Vibes', cursive;
+    font-family: 'MonteCarlo', cursive;
     color: #A0522D; /* Burnt Orange */
+}
+
+/* Media queries for responsive scaling */
+
+@media (max-width: 1024px) {
+    .overlay-text {
+        font-size: 3em; /* Adjusted size for tablets */
+        bottom: 18%;
+    }
+
+    h1 {
+        font-size: 2.8em;
+    }
+
+    p {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 768px) {
+    .overlay-text {
+        font-size: 2.5em; /* Adjusted size for small tablets */
+        bottom: 15%;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .overlay-text {
+        font-size: 2em; /* Adjusted size for mobile phones */
+        bottom: 10%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
+/* Media queries for larger screens */
+
+@media (min-width: 1200px) {
+    .overlay-text {
+        font-size: 4em; /* Max size */
+        bottom: 20%;
+    }
+
+    h1 {
+        font-size: 3em; /* Max size */
+    }
+
+    p {
+        font-size: 1.5em; /* Max size */
+    }
+}
+
+@media (min-width: 1600px) {
+    .overlay-text {
+        font-size: 4em; /* Ensure it doesn't grow beyond this */
+        bottom: 20%;
+    }
+
+    h1 {
+        font-size: 3em; /* Ensure it doesn't grow beyond this */
+    }
+
+    p {
+        font-size: 1.5em; /* Ensure it doesn't grow beyond this */
+    }
 }
