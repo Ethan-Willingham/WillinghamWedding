@@ -7,15 +7,14 @@ body {
 }
 
 .container {
+    max-width: 1000px; /* Contain everything within 1000px */
+    margin: 0 auto; /* Center the container */
     padding: 0 20px; /* Adjusted padding to only affect left and right */
 }
 
 .image-container {
     position: relative;
-    display: inline-block;
     width: 100%;
-    max-width: 1000px; /* Set max width for the image */
-    margin: 0 auto; /* Center the image container */
 }
 
 .floral-image {
@@ -49,19 +48,28 @@ p {
     color: #A0522D; /* Burnt Orange */
 }
 
+.lorem-ipsum {
+    margin: 20px 0;
+}
+
 .registry-link {
     margin: 20px 0;
 }
 
 .registry-link a {
     font-size: 1.5em;
-    color: #A0522D; /* Burnt Orange */
+    color: #fff; /* White text */
     text-decoration: none;
-    font-family: 'MonteCarlo', cursive;
+    font-family: 'Roboto', sans-serif; /* Use Roboto font */
+    background-color: #A0522D; /* Burnt Orange background */
+    padding: 10px 20px;
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .registry-link a:hover {
-    text-decoration: underline;
+    background-color: #8B3E2F; /* Darker burnt orange on hover */
+    text-decoration: none; /* Ensure no underline on hover */
 }
 
 .couple-images {
