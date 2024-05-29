@@ -35,14 +35,24 @@ body {
     bottom: 10%; /* Bring the text down more */
     left: 50%;
     transform: translateX(-50%);
-    font-size: 4.5em; /* Make the text a bit bigger */
+    font-size: 4em; /* Make the text a bit bigger */
     color: #A0522D; /* Burnt Orange */
     font-family: 'MonteCarlo', cursive; /* Specific font for Willingham Wedding */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     white-space: nowrap; /* Prevent line wrapping */
 }
 
-h1, .date, .button-56 {
+.decorative-line {
+    border: none;
+    height: 2px;
+    background: #A0522D;
+    margin: 10px 0;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1, .date, .address, .button-56 {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -56,6 +66,7 @@ h1 {
     font-size: 2.5em;
     margin: 10px 0;
     color: #A0522D; /* Burnt Orange */
+    text-decoration: underline; /* Underline the date */
 }
 
 p {
@@ -64,9 +75,9 @@ p {
     color: #A0522D; /* Burnt Orange */
 }
 
-.lorem-ipsum {
+.address {
+    font-size: 1.25em; /* Increase the base font size for the address */
     margin: 20px 0;
-    font-size: 1.2em;
 }
 
 .registry-link {
@@ -127,12 +138,7 @@ p {
     outline: 0;
 }
 
-@media (min-width: 768px) {
-    .button-56 {
-      padding: 0 20px; /* Adjust as needed */
-    }
-}
-
+/* Couple images styles */
 .couple-images {
     display: flex;
     justify-content: center;
@@ -162,8 +168,12 @@ p {
       font-size: 2.8em;
     }
 
-    .date, p {
-      font-size: 1.3em;
+    .date, p, .address {
+      font-size: 1.5em; /* Adjusted size for tablets */
+    }
+
+    .couple-images img {
+      max-width: 80%; /* Adjust width for smaller screens */
     }
 }
 
@@ -177,12 +187,16 @@ p {
       font-size: 2.5em;
     }
 
-    .date, p {
-      font-size: 1.2em;
+    .date, p, .address {
+      font-size: 1.3em; /* Adjusted size for small tablets */
     }
 
     .couple-images {
       flex-direction: column;
+    }
+
+    .couple-images img {
+      max-width: 90%; /* Adjust width for smaller screens */
     }
 }
 
@@ -196,8 +210,49 @@ p {
       font-size: 2em;
     }
 
-    .date, p {
-      font-size: 1
+    .date, p, .address {
+      font-size: 1.1em; /* Adjusted size for mobile phones */
+    }
+
+    .couple-images {
+      flex-direction: column;
+      align-items: center; /* Center align images on small screens */
+    }
+
+    .couple-images img {
+      max-width: 100%; /* Adjust width for smaller screens */
+    }
+}
+
+@media (min-width: 1200px) {
+    .overlay-text {
+      font-size: 5em; /* Max size */
+      bottom: 10%; /* Adjusted position for larger screens */
+    }
+
+    h1 {
+      font-size: 3em; /* Max size */
+    }
+
+    .date, p, .address {
+      font-size: 2em; /* Adjusted size for larger screens */
+    }
+}
+
+@media (min-width: 1600px) {
+    .overlay-text {
+      font-size: 5em; /* Ensure it doesn't grow beyond this */
+      bottom: 10%; /* Ensure it doesn't grow beyond this */
+    }
+
+    h1 {
+      font-size: 3em; /* Ensure it doesn't grow beyond this */
+    }
+
+    .date, p, .address {
+      font-size: 2em; /* Ensure it doesn't grow beyond this */
+    }
+}
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
