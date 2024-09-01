@@ -20,6 +20,67 @@ body {
     padding: 0 20px; /* Adjusted padding to only affect left and right */
 }
 
+
+.favorite-things {
+  margin: 30px 0;
+  padding: 20px;
+  background-color: #f9f2ec; /* Light background to differentiate this section */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.favorite-things h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #A0522D; /* Burnt Orange */
+}
+
+.favorite-things p {
+  font-size: 1.25em;
+  color: #A0522D; /* Burnt Orange */
+  margin-bottom: 20px;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.category {
+  margin-bottom: 20px;
+}
+
+.category h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #A0522D; /* Burnt Orange */
+  border-bottom: 2px solid #A0522D;
+  display: inline-block;
+}
+
+.category ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.category li {
+  margin: 10px 0;
+}
+
+.category a {
+  color: #A0522D; /* Burnt Orange */
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.category a:hover {
+  text-decoration: underline;
+  color: #8B4513; /* Darker shade for hover effect */
+}
+
+
 .image-container {
     position: relative;
     width: 100%;
