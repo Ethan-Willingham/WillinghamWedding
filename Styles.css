@@ -20,6 +20,15 @@ body {
     padding: 0 20px; /* Adjusted padding to only affect left and right */
 }
 
+.comment-text {
+  font-style: italic;
+  color: #8B4513; /* Darker burnt orange or softer color to make it stand out but not too much */
+  font-size: 1em; /* Slightly smaller size */
+  display: block; /* Makes it occupy its own line */
+  margin: 10px 0;
+}
+
+
 
 .favorite-things {
   margin: 30px 0;
